@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(5, 14, 31);
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* NAVBAR */
+.navbar{
+    background-color: #03112781;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+.div-navbar{
+text-align: end;
+display: flex;
+align-items: flex-end;
+}
+.navbar-brand-movil{
+    display: none;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navbar-nav a{
+    color: white;
+    padding: auto;
+    text-transform: uppercase;
+    margin: 0 .5em;
+}
+.navbar-nav a:hover{
+    color: #5AE4A8;
+    transition: .5s;
+}
+.navbar-nav .nav-contacto{
+    color: #5AE4A8;
+    font-weight: 700;
+}
+
+.sobre-mi{
+    white-space: nowrap;
+}
+.navbar-toggler{
+    border: 1px solid white;
+}
+.navbar-toggler:hover{
+    border: 1px solid #5AE4A8;
+}
+.bi-list{
+    color: white;
+}
+.bi-list:hover{
+    color: #5AE4A8;
+    border: none;
+}
+/* HEADER */
+.conteiner-header{
+    height: 650px;
+}
+.row-header{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.titulo-header{
+}
+.titulo-header h6{
+    color: rgb(160, 160, 160);
+    font-size: 1.5em;
+}
+.titulo-header h1{
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    font-size: 4.5em;
+}
+.titulo-header h3{
+    color: #5AE4A8;
+    font-size: 2em;
+}
+.titulo-header span{
+    color: rgb(160, 160, 160);
+}
+.img-1{
+    height: 25em;
+    position: absolute;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.section-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #031127;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.section-header .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+    overflow-x: hidden;
+}
+.section-header .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0S;
+    bottom: 0;
+}
+.section-header .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5S;
+    bottom: 0;
+}
+.section-header .wave.wave3{
+    animation: animate3 30s linear infinite;
+    z-index: 998;
+    opacity: .2;
+    animation-delay: -2S;
+    bottom: 10px;
+}
+.section-header .wave.wave4{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: .7;
+    animation-delay: 0S;
+    bottom: 20;
+}
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px ;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px ;
+    }
+}
+@keyframes animate3{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px ;
+    }
+}
+/* SECTION - SOBRE MÍ */
+.section-sobre-mi{
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+.section-sobre-mi div{
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 0;
+}
+.text-sobre-mi{
+    font-weight: 700;
+}
+.imagen-sobre-mi{
+    height: 25em;
+    position: absolute;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+
+}
+/* SECTION - SKILLS */
+.skills{
+    background-color: white;
+    width: 100%;
+}
+.img-lenguajes{
+    display: flex;
+    justify-content: center;
+}
+.img-lenguajes img{
+    height: 7em;
+    padding: 0;
+}
+.text-skills{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: .2em;
+    padding-top: 2em;
+}
+/* SECTION - PROYECTOS */
+
+.text-proyectos{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0%;
+}
+.section-proyectos{
+    background-color: white;
+    padding-bottom: em;
+}
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.profile-card-2 {
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 19em;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card-2 a img {
+    transition: all linear 0.25s;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+    text-shadow: 3px 1px 20px black;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    text-shadow: 3px 1px 20px black;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2:hover img {
+    filter: grayscale(0%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+
+
+/* SECTION - CONTACTO */
+.contacto{
+    background-color: rgb(5, 14, 31);
+    height: auto;
+}
+.contacto-conteiner{
+    background-color:rgba(255, 255, 255, 0.041) ;
+    height: auto;
+    border-radius: 10px;
+    text-align: start;
+    justify-content: center;
+    margin: 3em;
+    padding: 2em;
+    width: auto;
+}
+.i-contacto{
+    color: #5AE4A8;
+    font-size: 2em;
+    margin-right: 1em;
+}
+.text-contacto{
+    color: white;
+    justify-items: start;
+}
+.datos-contacto h3{
+    color: white;
+    font-size: 1.2em;
+}
+.tipo-dato-contacto{
+    font-size: 1em;
+}
+.dato-contacto{
+    font-size: .8em;
+    color: rgb(189, 189, 189);
+}
+.input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #26264b;
+    width: 17em;
+    height: 2em;
+    outline: none;
+}
+.textos-formulario{
+    color: white;
+}
+.enviar{
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #5AE4A8;
+    background-size: 200%;
+    background-position: right;
+    transition: background-position 1s;
+    color: #26264b;
+    font-weight: 700;
+    margin-top: 1em;
+}
+.enviar:hover{
+    background-color: #26264b;
+    color: #5AE4A8;
+}
+.email-formulario{
+    margin-top: .5em;
+}
+/* FOOTER */
+footer{
+    height: 50px;
+    color: rgb(160, 160, 160);
+    padding-top: 1em;
+}
+footer p{
+    padding: 0;
+    line-height: 4px;
+    font-size: .7em;
+}
+
+
+
+
+
+
+
+@media (max-width: 1100px){
+    .profile-card-2{
+        height: 19em;
+        max-width: 200px;
+        max-height: 200px;
+        padding: 0 0;
+    }
+    .text-proyectos{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 992px){
+    .img-1{
+        display: none;
+    }
+    .imagen-sobre-mi{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .navbar-brand-movil{
+        display: inline;
+    }
+    .navbar-brand{
+        display: none;
+    }
+    .contenido-caja{
+        align-content: center;
+    }
+}
+@media (max-width: 450px){
+    .contacto-conteiner{
+        margin: .5em;
+    }
+}
+
+@media (max-width: 400px){
+    .logo-texto{
+        display: none;
+    }
+}
